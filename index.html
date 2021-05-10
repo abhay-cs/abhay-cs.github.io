@@ -5,23 +5,66 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="script.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Gayathri:wght@100;400;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <script src="script.js"></script>
     <title>Welcome!</title>
 </head>
 
 <body>
-    <div class="nav">
-        <ul class="navabar">
-            <li>Home</li>
-            <li>Projects</li>
-            <li>About</li>
-        </ul>
+    <div class="my-info">
+        <div class="profile-circle">
+            <img class="profile-img" src="./resources/photo.jpg" alt="profile-image">
+        </div>
+        <div class="titles">
+            <h1>Abhay Sharma</h1>
+            <h2 class = "student">Student</h2>
+        </div>
+        <div class="social">
+            <a href="http://github.com/abhay-cs" title="GitHub" class="fab fa-github fa-2x"></a>
+            <a href="https://www.linkedin.com/in/abhaycs/" title="Linkedin" class="fab fa-linkedin fa-2x"></a>
+            <a href="resume.html" title="Résumé" class="fas fa-file-alt fa-2x"></a>
+            <a href="blog.html" title="Blog" class="fas fa-blog fa-2x"></a>
+        </div>
     </div>
-    <h1 class="line-1 anim-typewriter">💻Abhay💻</h1>
+    <!-- projects section -->
+    <div class="projects-section">
+        <h2 id="h2-text">Some of my projects..</h2>
+        <div class="projects-list">
+            <table class="table-project" border="1">
+                <tr class="category">
+                    <th class="head">Name</th>
+                    <th class="head">Type</th>
+                    <th class="head">Status</th>
+                </tr>
+                <tr class="category">
+                    <th class="element"><a class = "project" href="#">UMERA</a></th>
+                    <th  class="element">Team</th>
+                    <th  class="element">In Progress</th>
+                </tr>
+                <tr class="category">
+                    <th  class="element"><a class = "project" href="#">Screen Recorder</a></th>
+                    <th  class="element">Solo</th>
+                    <th  class="element">In Progress</th>
+                </tr>
+                <tr class="category">
+                    <th  class="element"><a class = "project" href="#">Algorithm Visualizer</a></th>
+                    <th  class="element">Team</th>
+                    <th  class="element">In Progress</th>
+                </tr>
+            </table>
+        </div>
+    </div>
+    </div>
+
 </body>
+<!-- footer at the bottom -->
+<footer>
+    &copy; 2021 - Abhay Sharma
+</footer>
 
 </html>
