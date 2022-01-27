@@ -41,7 +41,20 @@ body {
 	color: #976d9e;
 }
 
-.profile-img {
+
+.profile-icon{
+	margin-left: 20px;
+	transition:1s;
+}
+.profile-icon:hover{
+	color: #976d9e;
+	-o-transform:rotate(360deg);
+    -ms-transform:rotate(360deg);
+    -moz-transform:rotate(360deg);
+    -webkit-transform:rotate(360deg);
+    transform:rotate(360deg);
+}
+/* .profile-img {
 	border-radius: 47%;
 	width: 270px;
 	height: 250px;
@@ -53,7 +66,7 @@ body {
                 0 2px 2px rgba(0, 0, 0, 0.12),
 		        0 4px 4px rgba(0, 0, 0, 0.16), 
                 0 8px 8px rgba(0, 0, 0, 0.20);
-}
+} */
 
 .social {
 	display: flex;
