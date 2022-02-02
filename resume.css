@@ -2,7 +2,7 @@ html {
 	height: 95%;
 	margin: 0;
 	font-family: "Open Sans", sans-serif;
-	background-color: #EFE6E1;
+	background-color: #dad5d2;
 }
 
 body {
@@ -41,7 +41,7 @@ h1{
 }
 h1:hover{
     text-decoration: line-through;
-    color: #976D9E;
+    color: #7aa39a;
 }
 
 .btn-back{
@@ -50,7 +50,7 @@ h1:hover{
     margin-top: 1px;
 }
 .btn-back:hover{
-    color: #976D9E;
+    color: #7aa39a;
 }
 
 footer {
@@ -64,5 +64,5 @@ footer {
 
 footer:hover{
     text-decoration: line-through;
-    color: #976D9E;
+    color: #7aa39a;
 }
