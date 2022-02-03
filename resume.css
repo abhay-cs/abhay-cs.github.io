@@ -27,7 +27,7 @@ body {
 
 .myFrame{
     margin-bottom: 1rem;
-    width: 60vw;
+    width: 70vw;
 }
 a:link{
     text-decoration: none;
@@ -53,16 +53,3 @@ h1:hover{
     color: #7aa39a;
 }
 
-footer {
-    position: fixed;
-	width: 100%;
-	padding-left: 20px;
-	padding-bottom: 20px;
-	bottom: 1px;
-	text-align: center;
-}
-
-footer:hover{
-    text-decoration: line-through;
-    color: #7aa39a;
-}

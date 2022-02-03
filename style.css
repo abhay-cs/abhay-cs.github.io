@@ -25,7 +25,9 @@ body {
     opacity: 1;
   }
 }
-
+.my-info{
+    margin-top: 8rem;
+}
 .titles {
   text-align: center;
 }
@@ -45,6 +47,8 @@ body {
 .profile-icon {
   margin-left: 30px;
   align-items: center;
+  margin-top: 5rem;
+  border-radius: 50%;
   /* transition:1s; */
 }
 .profile-icon:hover {
@@ -60,7 +64,7 @@ body {
 .social {
   margin-top: 2rem;
   display: flex;
-  justify-content: space-around;
+  justify-content:space-between;
   text-decoration: none;
   color: black;
 }
@@ -71,6 +75,25 @@ body {
 #h2-text:hover {
   color: #7aa39a;
   text-decoration: line-through;
+}
+
+.text-project > button{
+    font-weight: 300;
+    font-size: 20px;
+    margin-top: 4rem;
+    width: 110px;
+    height: 40px;
+    /* btn styling */
+    border: 0;
+    border-radius: 15px ;
+    background-color: #000000;
+    color: #dad5d2;
+
+}
+.text-project > button:hover{
+    color: black;
+    background-color: #7aa39a;
+    
 }
 
 .grid {
@@ -98,6 +121,7 @@ body {
   color: white;
   padding: 10px;
   width: 100%;
+  border-radius: 10px;
 }
 .text > button:hover{
 	background-color: #7aa39a;
