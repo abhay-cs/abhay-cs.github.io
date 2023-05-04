@@ -3,6 +3,7 @@
 
 <head>
 	<meta charset="UTF-8" />
+	<link rel="shortcut icon" href="/resources/favicon.ico" type="image/x-icon">
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<meta name="description" content="Portfolio" />
 	<link rel="preconnect" href="https://fonts.googleapis.com"/>
@@ -30,13 +31,10 @@
 	  <nav class="nav center">
 		<ul class="nav__list center">
 		  <li class="nav__list-item">
-			<a class="link link--nav" href="#projects">Projects</a>
+			<a class="link link--nav" href="#projects">projects</a>
 		  </li>
 		  <li class="nav__list-item">
-			<a class="link link--nav" href="#skills">Skills/Tools</a>
-		  </li>
-		  <li class="nav__list-item">
-			<a class="link link--nav" href="#contact">Contact</a>
+			<a class="link link--nav" href="#skills">skills/tools</a>
 		  </li>
 		</ul>
 
@@ -58,19 +56,14 @@
 	  <!-- About -->
 	  <div class="about center">
 		<h1>Hi, I am <span class="about__name">Abhay.</span></h1>
-		<h2 class="about__role">Computer Science Student.</h2>
+		<h2 class="about__role">Software Developer</h2>
 		<p class="about__desc">
-			I'm a 3rd year computer science student from winnipeg, Manitoba 
-			currently studying at University of Manitoba. Check out some of my
-			projects that i have done by myself and collabratively with a team.
-			<br>I'm currently looking for an fulltime internship, If you are an employer
-			looking to hire, feel free to reach out through email or linkedin.
+			A fourth year comp-sci student @Umanitoba.
+			<br>
+			Check out some of my projects below.
+
 
 		<div class="about__contact center">
-		  <!-- <a href="https://example.com">
-			<span class="btn btn--outline">Resume</span>
-		  </a> -->
-
 		  <a
 			href="https://github.com/abhay-cs/"
 			aria-label="github"
@@ -86,12 +79,20 @@
 		  >
 			<i aria-hidden="true" class="fab fa-linkedin fa-2x"></i>
 		  </a>
+
+		  <a
+			href="https://drive.google.com/file/d/1qLXZ31LDXHN7q6e2_VyacBHJeZK-WfYH/view?usp=sharing"
+			aria-label="resume"
+			class="link link--icon"
+		  >
+			<i aria-hidden="true" class="fa fa-file fa-2x"></i>
+		  </a>
 		</div>
 	  </div>
 
 	  <!-- Projects -->
 	  <section id="projects" class="section projects">
-		<h2 class="section__title">Projects</h2>
+		<h2 class="section__title">projects</h2>
 
 		<div class="projects__grid">
 		  <div class="project">
@@ -151,6 +152,35 @@
 			  <i aria-hidden="true" class="fas fa-external-link-alt"></i>
 			</a> -->
 		  </div>
+
+		  <div class="project">
+			<h3>Hospital Database System</h3>
+			<p class="project__description">
+				The Book Store app will allow users to buy, sell or rent books through the app.
+				Users will also be able to browse and find books based on their preference.
+			</p>
+			<ul class="project__stack">
+			  <li class="project__stack-item">JavaFX</li>
+			  <li class="project__stack-item">Java</li>
+			  <li class="project__stack-item">MySql</li>
+			</ul>
+
+			<a
+			  href="https://github.com/abhay-cs/BookStore"
+			  aria-label="source code"
+			  class="link link--icon"
+			>
+			  <i aria-hidden="true" class="fab fa-github"></i>
+			</a>
+			<!-- <a
+			  href="https://example.com"
+			  aria-label="live preview"
+			  class="link link--icon"
+			>
+			  <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+			</a> -->
+		  </div>
+
 
 		  <div class="project">
 			<h3>Currency Exchange</h3>
@@ -213,7 +243,7 @@
 
 	  <!-- Skills -->
 	  <section class="section skills" id="skills">
-		<h2 class="section__title">Skills/Tools</h2>
+		<h2 class="section__title">skills/tools</h2>
 		<ul class="skills__list">
 		  <li class="skills__list-item btn btn--plain">HTML</li>
 		  <li class="skills__list-item btn btn--plain">CSS</li>
@@ -230,33 +260,6 @@
 		</ul>
 	  </section>
 
-	  <!-- Contact -->
-	  <section class="section contact center" id="contact">
-		<h2 class="section__title">Contact Me</h2>
-		<form target="_blank" action="https://formsubmit.co/abhaysharmacse@gmail.com" method="POST">
-		  <div class="form-group">
-			<div class="form-row">
-			  <div class="col">
-				<input type="text" name="name" class="form-control" placeholder="Full Name" required>
-			  </div>
-			  <div class="col">
-				<input type="email" name="email" class="form-control" placeholder="Email Address" required>
-			  </div>
-			  <input type="hidden" name="_captcha" value="false">
-			</div>
-		  </div>
-		  <div class="form-group">
-			<textarea placeholder="Your Message" class="form-control" name="message" rows="10" required></textarea>
-		  </div>
-		  <div class="submit">
-			<button type="submit" class="btn btn--outline">Contact</button>
-		  </div>
-		</form>
-<!--         
-		<a href="mailto:abhaysharmacse@gmail.com">
-		  <span class="btn btn--outline">Email me</span>
-		</a> -->
-	  </section>
 	</main>
 	<div class="scroll-container">
 	<div class="scroll-top">
