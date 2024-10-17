@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+}
+
+
+/* Profile Section in Sidebar */
+.profile-section {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-section h3 {
+    color: #F4F4F9;
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+.profile-section p {
+    color: #B0B0B0;
+    font-size: 1rem;
+    margin-top: 5px;
+}
+
+.profile-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    /* Circular profile picture */
+    object-fit: cover;
+    /* border: 3px solid #; */
+}
+
+/* Sidebar Styles */
+#sidebar {
+    position: fixed;
+    width: 250px;
+    height: 100vh;
+    background-color: #3e3b3b;
+    color: white;
+    padding: 20px;
+    overflow-y: auto;
+    /* Sidebar scrolls if content exceeds */
+    transition: transform 0.3s ease-in-out;
+    z-index: 1000;
+}
+
+#sidebar ul {
+    list-style-type: none;
+}
+
+#sidebar ul li {
+    margin: 20px 0;
+}
+
+#sidebar ul li a {
+    color: #F4F4F9;
+    text-decoration: none;
+    font-size: 1.2rem;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#sidebar ul li a:hover {
+    background-color: white;
+    color: #2E2E2E;
+}
+
+/* Hide Sidebar for Mobile by default */
+@media (max-width: 768px) {
+    #sidebar {
+        transform: translateX(-100%);
+    }
+
+    /* Display the sidebar when open */
+    #sidebar.open {
+        transform: translateX(0);
+    }
+
+    /* Hamburger Menu Button */
+    #menu-btn {
+        display: block;
+        background-color: black;
+        color: white;
+        border: none;
+        font-size: 1.5rem;
+        padding: 10px;
+        cursor: pointer;
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        z-index: 1100;
+    }
+}
+
+/* Main Content Styles */
+#main-content {
+    margin-left: 270px;
+    padding: 20px;
+    width: calc(100% - 270px);
+    overflow-y: scroll;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    #main-content {
+        margin-left: 0;
+        width: 100%;
+        padding: 20px;
+    }
+}
+
+/* Section Styles */
+section {
+    padding: 50px 0;
+    min-height: 100vh;
+    border-bottom: 1px solid #ddd;
+}
+
+h2 {
+    color: #3e3b3b;
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1.2rem;
+    color: #2E2E2E;
+}
+
+/* Active Link Highlight */
+#sidebar ul li a.active {
+    background-color: white;
+    color: black;
+}
+
+/* Hide the hamburger button by default (for larger screens) */
+#menu-btn {
+    display: none;
+    /* Hidden on larger screens */
+}
+
+/* Show the hamburger button on smaller screens */
+@media (max-width: 768px) {
+    #menu-btn {
+        display: block;
+        background-color: black;
+        color: white;
+        border: none;
+        font-size: 1.5rem;
+        padding: 10px;
+        cursor: pointer;
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        z-index: 1100;
+        /* Ensure the button is above the sidebar */
+    }
+}
+
+#main-content {
+    font-family: "Lato", sans-serif;
+    line-height: 2.0;
+}
+
+#main-content h1 {
+    font-size: 2em;
+}
+
+#main-content h2 {
+    font-size: 1.75em;
+}
+
+#main-content h3 {
+    font-size: 1.5em;
+}
+
+#main-content h4 {
+    font-size: 1.25em;
+}
+
+a{
+    text-decoration: none;
+    color: #2E2E2E;
+}
+a:hover{
+    color: lightcoral;
+}
+
+.sidebar-footer {
+    margin-top: auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.sidebar-footer a {
+    text-decoration: none;
+    color: #333; /* Choose the text color that fits your palette */
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.github-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+}

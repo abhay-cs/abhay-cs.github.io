@@ -2,319 +2,64 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8" />
-	<link rel="shortcut icon" href="/resources/favicon.ico" type="image/x-icon">
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<meta name="description" content="Portfolio" />
-	<link rel="preconnect" href="https://fonts.googleapis.com" />
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet" />
-	<script src="https://kit.fontawesome.com/fa62c117c7.js" crossorigin="anonymous"></script>
-	<link rel="stylesheet" href="/css/style.css" />
-	<title>Abhay Sharma</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio with Sidebar</title>
+    <link rel="stylesheet" href="styles.css">
+    <<!-- Include the Showdown library -->
+        <script src="https://cdn.jsdelivr.net/npm/showdown/dist/showdown.min.js"></script>
+
 </head>
 
-<body class="light" id="top">
-	<header class="header center">
-		<h3>
-			<a href="https://abhay-cs.github.io/" class="link">AS.</a>
-		</h3>
+<body>
 
-		<nav class="nav center">
-			<ul class="nav__list center">
-				<li class="nav__list-item">
-					<a class="link link--nav" href="#projects">projects</a>
-				</li>
-				<li class="nav__list-item">
-					<a class="link link--nav" href="#skills">skills/tools</a>
-				</li>
-			</ul>
+    <!-- Sidebar -->
+    <nav id="sidebar">
+        <!-- Profile Section -->
+        <div class="profile-section">
+            <img src="/assets/cat.webp" alt="Profile Image" class="profile-img">
+            <h3>Abhay</h3>
+            <p>Computer Science Graduate</p>
+        </div>
+        <ul>
+            <li><a href="#section1">About Me</a></li>
+            <li><a href="#section2">Projects</a></li>
+            <li><a href="#section3">Skills</a></li>
+            <li><a href="#section4">Contact</a></li>
+        </ul>
+    </nav>
 
-			<button type="button" aria-label="toggle theme" class="btn btn--icon">
-				<i aria-hidden="true" id="btn-theme" class="fas fa-moon"></i>
-			</button>
+    <!-- Main Content -->
+    <div id="main-content">
+        <section id="section1">
+            <h2>About Me</h2>
+            <div id="about-me"></div>
+        </section>
 
-			<button type="button" aria-label="toggle navigation" class="btn btn--icon nav__hamburger">
-				<i aria-hidden="true" class="fas fa-bars"></i>
-			</button>
-		</nav>
-	</header>
+        <section id="section2">
+            <h2>Projects</h2>
+            <div id="projects"></div>
+        </section>
 
-	<main>
-		<!-- About -->
-		<div class="about center">
-			<h1>Hi, I am <span class="about__name">Abhay</span></h1>
-			<h2 class="about__role">👨🏻‍💻Software Developer</h2>
-			<p class="about__desc">
-				A fourth year Comp science student @Umanitoba.
-				<br>
-				Check out some of my projects below.
+        <section id="section3">
+            <h2>Skills</h2>
+            <div id="skills"></div>
+        </section>
 
+        <section id="section4">
+            <h2>Contact</h2>
+            <div id="contact"></div>
+        </section>
+    </div>
 
-			<div class="about__contact center">
-				<a href="https://github.com/abhay-cs/" aria-label="github" class="link link--icon">
-					<i aria-hidden="true" class="fab fa-github fa-2x"></i>
-				</a>
-
-				<a href="https://linkedin.com/in/abhaycs/" aria-label="linkedin" class="link link--icon">
-					<i aria-hidden="true" class="fab fa-linkedin fa-2x"></i>
-				</a>
-
-				<a href="https://drive.google.com/file/d/1qLXZ31LDXHN7q6e2_VyacBHJeZK-WfYH/view?usp=sharing"
-					aria-label="resume" class="link link--icon">
-					<i aria-hidden="true" class="fa fa-file fa-2x"></i>
-				</a>
-			</div>
-		</div>
-
-		<!-- Projects -->
-		<section id="projects" class="section projects">
-			<h2 class="section__title">projects</h2>
-
-			<div class="projects__grid">
-				<div class="project">
-					<h3>HTTP Web Server</h3>
-					<p class="project__description">
-						Implemented an HTTP webserver with REST API protocol with
-						different Methods such as GET, POST, PUT, DELETE.
-						That we can run on an JSON database and our server handles those requests.
-					</p>
-					<ul class="project__stack">
-						<li class="project__stack-item">Python</li>
-						<li class="project__stack-item">JSON</li>
-						<li class="project__stack-item">REST API</li>
-						<li class="project__stack-item">HTML</li>
-					</ul>
-
-					<a href="https://github.com/abhay-cs/http_webserver" aria-label="source code"
-						class="link link--icon">
-						<i aria-hidden="true" class="fab fa-github"></i>
-					</a>
-					<!-- <a
-			  href="https://example.com"
-			  aria-label="live preview"
-			  class="link link--icon"
-			>
-			  <i aria-hidden="true" class="fas fa-external-link-alt"></i>
-			</a> -->
-				</div>
-
-				<div class="project">
-					<h3>Book Store</h3>
-					<p class="project__description">
-						The Book Store app will allow users to buy, sell or rent books through the app.
-						Users will also be able to browse and find books based on their preference.
-					</p>
-					<ul class="project__stack">
-						<li class="project__stack-item">Android Studio</li>
-						<li class="project__stack-item">Java</li>
-						<li class="project__stack-item">SQLite</li>
-					</ul>
-
-					<a href="https://github.com/abhay-cs/BookStore" aria-label="source code" class="link link--icon">
-						<i aria-hidden="true" class="fab fa-github"></i>
-					</a>
-					<!-- <a
-			  href="https://example.com"
-			  aria-label="live preview"
-			  class="link link--icon"
-			>
-			  <i aria-hidden="true" class="fas fa-external-link-alt"></i>
-			</a> -->
-				</div>
-
-				<div class="project">
-					<h3>Hospital Database System</h3>
-					<p class="project__description">
-						Collaborated with a team of 4 to design and implement a hospital management system using MySQL
-						and JavaFX.
-					</p>
-					<ul class="project__stack">
-						<li class="project__stack-item">JavaFX</li>
-						<li class="project__stack-item">Java</li>
-						<li class="project__stack-item">MySql</li>
-					</ul>
-
-					<a href="https://github.com/abhay-cs/BookStore" aria-label="source code" class="link link--icon">
-						<i aria-hidden="true" class="fab fa-github"></i>
-					</a>
-					<!-- <a
-			  href="https://example.com"
-			  aria-label="live preview"
-			  class="link link--icon"
-			>
-			  <i aria-hidden="true" class="fas fa-external-link-alt"></i>
-			</a> -->
-				</div>
-
-
-				<div class="project">
-					<h3>Currency Exchange</h3>
-					<p class="project__description">
-						A simple app to convert between diffrent currencies
-						using an API to get the latest rates. Used AJAX with JavaScript to implement it.
-					</p>
-					<ul class="project__stack">
-						<li class="project__stack-item">JavaScript</li>
-						<li class="project__stack-item">API</li>
-						<li class="project__stack-item">HTML</li>
-						<li class="project__stack-item">CSS</li>
-					</ul>
-
-					<a href="https://github.com/abhay-cs/cxexchange" aria-label="source code" class="link link--icon">
-						<i aria-hidden="true" class="fab fa-github"></i>
-					</a>
-
-					<!-- <a
-			  href="https://example.com"
-			  aria-label="live preview"
-			  class="link link--icon"
-			>
-			  <i aria-hidden="true" class="fas fa-external-link-alt"></i>
-			</a> -->
-				</div>
-				<div class="project">
-					<h3>Hang Man</h3>
-					<p class="project__description">
-						A simple console implementation of all time classic Hangman
-						using Python.
-					</p>
-					<ul class="project__stack">
-						<li class="project__stack-item">Python</li>
-					</ul>
-
-					<a href="https://github.com/abhay-cs/HangMan" aria-label="source code" class="link link--icon">
-						<i aria-hidden="true" class="fab fa-github"></i>
-					</a>
-
-					<!-- <a
-			  href="https://example.com"
-			  aria-label="live preview"
-			  class="link link--icon"
-			>
-			  <i aria-hidden="true" class="fas fa-external-link-alt"></i>
-			</a> -->
-				</div>
-
-			</div>
-		</section>
-
-		<!-- <h2>What do I use ?</h2> -->
-		<!-- Skills -->
-		<!-- <section class="section skill-grid" id="skills">
-			<div class="skill-header">
-				
-			</div>
-
-			<div class="skills">
-				<div class="skill-head">
-					Web Development
-				</div>
-				<p align="center">
-					<img src="https://skillicons.dev/icons?i=css,bootstrap,html,js,nodejs,react&perline=4" />
-
-				</p>
-			</div>
-			<div class="skills">
-				<div class="skill-head">
-					Mobile Development
-				</div>
-				<p align="center">
-
-					<img src="https://skillicons.dev/icons?i=androidstudio,java&perline=4" />
-
-				</p>
-			</div>
-
-			<div class="skills">
-				<div class="skill-head">
-					Tools
-				</div>
-				<p align="center">
-
-					<img src="https://skillicons.dev/icons?i=git,arduino,vscode,vim&perline=4" />
-					
-				</p>
-			</div>
-
-			<div class="skills">
-				<div class="skill-head">
-					Languages
-				</div>
-				<p align="center">
-
-					<img src="https://skillicons.dev/icons?i=r,processing,java,python,c,cpp,js&perline=4" />
-				</p>
-			</div>
-
-
-
-		</section> -->
-		<section id="skills">
-			<div class="skill-table">
-				<h2 class="section__title table-header">skills</h2>
-				<table class="center-table">
-					<tr>
-
-					</tr>
-					<tr>
-						<td class="theader">Tools</td>
-						<td>
-							<p align="center">
-								<img src="https://skillicons.dev/icons?i=git,arduino,vscode,vim,postman&perline=3" />
-							</p>
-						</td>
-
-					</tr>
-					<tr>
-						<td class="theader">Languages</td>
-						<td>
-							<p align="center">
-								<img src="https://skillicons.dev/icons?i=r,processing,java,python,c,cpp,js&perline=3" />
-							</p>
-						</td>
-
-					</tr>
-					<tr>
-						<td class="theader">Web Dev</td>
-						<td>
-							<p align="center">
-								<img src="https://skillicons.dev/icons?i=css,bootstrap,html,js,nodejs,react&perline=3" />
-							</p>
-						</td>
-
-					</tr>
-					<tr>
-						<td class="theader">Mobile Dev</td>
-						<td>
-							<p align="center">
-								<img src="https://skillicons.dev/icons?i=androidstudio,java&perline=3" />
-							</p>
-						</td>
-
-					</tr>
-					<tr>
-						<td class="theader">Databases</td>
-						<td>
-							<p align="center">
-								<img src="https://skillicons.dev/icons?i=sqlite,mysql,mongodb&perline=3" />
-							</p>
-						</td>
-
-					</tr>
-				</table>
-			</div>
-		</section>
-
-	</main>
-	<div class="scroll-container">
-		<div class="scroll-top">
-			<a aria-label="Scroll up" href="#top">
-				<i aria-hidden="true" class="fas fa-arrow-up"></i>
-			</a>
-		</div>
-	</div>
-	<script src="/js/script.js"></script>
+    <button id="menu-btn">&#9776;</button>
+    <div class="sidebar-footer">
+        <a href="https://github.com/yourusername" target="_blank">
+            <img src="github-icon.png" alt="GitHub" class="github-icon">
+            GitHub
+        </a>
+    </div>
+    <script src="index.js"></script>
 </body>
 
 </html>
